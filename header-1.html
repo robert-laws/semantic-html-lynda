@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Header One</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .clear-fix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    header {
+      /* border: 2px solid #DE4AC0; */
+      background-color: #444;
+      height: 60px;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.8em;
+    }
+    header div.header-group {
+      float: left;
+      color: #FFF;
+      margin: 5px 10px 0;
+    }
+    header nav {
+      float: right;
+    }
+    header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: #444;
+    }
+    header nav ul li {
+      display: inline-block;
+      font-size: 1.25em;
+      line-height: 60px;
+      height: 60px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #BBB;
+      display: block;
+      transition: .3s background-color;
+      padding: 0 40px;
+    }
+    nav a:hover {
+      background-color: rgb(43, 53, 43);
+    }
+  </style>
+</head>
+<body>
+  <header class="clear-fix">
+    <div class="header-group">
+      <h1>Website Header</h1>
+      <p>website tagline</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">link 1</a></li>
+        <li><a href="#">link 2</a></li>
+        <li><a href="#">link 3</a></li>
+        <li><a href="#">link 4</a></li>
+      </ul>
+    </nav>
+  </header>
+</body>
+</html>
