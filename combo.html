@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML5</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      border: 1px solid #f0F;
+    }
+    .clear-fix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .hgroup {
+      display: block;
+      float: left;
+    }
+    .hgroup h1, .hgroup p {
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      display: flex;
+      float: right;
+    }
+    nav a {
+      padding: 20px;
+      background-color: #F1A;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #1F3;
+    }
+  </style>
+</head>
+<body>
+  <header class="clear-fix">
+    <div class="hgroup">
+      <h1>Website Header</h1>
+      <p>tagline</p>
+    </div>
+    <nav>
+      <a href="#">link 1</a>
+      <a href="#">link 2</a>
+      <a href="#">link 3</a>
+      <a href="#">link 4</a>
+    </nav>
+  </header>
+</body>
+</html>
